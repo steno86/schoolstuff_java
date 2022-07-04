@@ -16,30 +16,30 @@ public class aufgabe02_2022_07_04 {
         
         System.out.println("Schuhmacher:  \"Ist deine Schuhgrösse 37?\"");
         if (schuhgroesse == 37) {
-            System.out.println("Kunde:  \"Ja!\"");
+            System.out.println("Kunde:        \"Ja!\"");
             System.out.println("Schuhmacher: \"Super, hier sind deine Schuhe!\"");
         } 
         else {
-            System.out.println("Kunde:  \"Nein!\"");
+            System.out.println("Kunde:        \"Nein!\"");
             System.out.println("Schuhmacher:  \"Tut mir leid ich schaue weiter...\"");
             System.out.println("Schuhmacher:  \"Ist deine Schuhgrösse 40?\"");
             if (schuhgroesse == 40) {
-                System.out.println("Kunde:  \"Ja!\"");
+                System.out.println("Kunde:        \"Ja!\"");
                 System.out.println("Schuhmacher: \"Super, hier sind deine Schuhe!\"");
-        } 
+            } 
             else {
-                System.out.println("Kunde:  \"Nein!\"");
+                System.out.println("Kunde:        \"Nein!\"");
                 System.out.println("Schuhmacher:  \"Tut mir leid ich schaue weiter...\"");
                 if (schuhgroesse == 45) {
                     System.out.println("Schuhmacher:  \"Ist deine Schuhgrösse 45?\"");
-                    System.out.println("Kunde:  \"Ja!\"");
-                    System.out.println("Schuhmacher: \"Super, hier sind deine Schuhe!\"");
-        } 
+                    System.out.println("Kunde:        \"Ja!\"");
+                    System.out.println("Schuhmacher:  \"Super, hier sind deine Schuhe!\"");
+                } 
                 else {
-                    System.out.println("Kunde:  \"Nein!\"");
+                    System.out.println("Kunde:        \"Nein!\"");
                     System.out.println("Schuhmacher:  \"Tut mir leid ich habe deine Schuhe nicht fertig.\"");
-        }
-        }
+                }
+            }
         
         }
         
