@@ -8,7 +8,7 @@ package aufgaben;
 public class aufgabe03_2022_07_04 {
     public static void main(String[] args) {
         
-        double rechnung1 = 155.50, rechnung2 = 355.50;
+        double rechnung1 = 155.50, rechnung2 = 355.50, rechnung3 = 255.50;
         boolean vergleich;
         int Nummer1 = 15;
         
@@ -30,11 +30,12 @@ public class aufgabe03_2022_07_04 {
         System.out.println("Der Kubikwert von 15 ist: " + Nummer1);
         
         //Schritt 5
-        if (Nummer1 > (rechnung2 *= 1000 + 200)) {
+        if (Nummer1 > (rechnung2 *= 1000 + 200)) {  //Der Wert für rechnung2 wird hier auch neu gespeichert
             System.out.println("Nummer1 ist grösser wie rechnung2");
         }
         else {
-            System.out.println("Nummer1 ist nicht grösser wie rechnung2");
+            System.out.println("Nummer1 ist nicht grösser wie rechnung2 * 1000 + 200");
         }
+        
     }
 }
