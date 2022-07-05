@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 /**
  *
- * @author BFW
+ * @author Stefano Ricca
+ * Einfacher Rechner
  */
 public class rechner {
     public static void main(String[] args) {
