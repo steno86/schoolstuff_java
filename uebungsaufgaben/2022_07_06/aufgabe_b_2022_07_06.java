@@ -41,5 +41,5 @@ public class aufgabe_b_2022_07_06 {
             anfWert=anfWert-abschreibung;
             nutzJahr++;
         }
-        System.out.println("Wert "+anschWert+" dauer "+nutzDauer);
     }
+}
