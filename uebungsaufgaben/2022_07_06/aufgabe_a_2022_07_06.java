@@ -15,16 +15,26 @@ public class aufgabe_a_2022_07_06 {
         Scanner scanner2 = new Scanner (System.in);
         
         int menge, rabatt;
-        double betragRechnung;
+        double betragRabattiert;
         
-        
-        System.out.println("Bitte die anzahl Kästen eingeben:");
+        //Programmstart
+        System.out.print("Bitte die anzahl Kästen eingeben: ");
         menge = scanner1.nextInt();
         
         rabatt = Rabattklasse(menge);
         
-        System.out.println("Ihr Rabatt beträgt "+rabatt+"%");  
+        if (rabatt==0) {
+        System.out.println("Für "+menge+" Kästen ist kein Rabatt vorgesehen.");
+        }
+        else {
+            System.out.print("Ihr Rabatt beträgt "+rabatt+"%\nBitte noch den Rechnungsbetrag eingeben: ");
+            betragRabattiert = Abzug(scanner2.nextDouble(), rabatt);
+            System.out.println("Ihre neue Rechnung abzüglich Rabatt beträgt: "+betragRabattiert+" Euro.");
+        }
     }
+    
+    
+    
     
     //Methode zur Rabattberechnung
     public static int Rabattklasse (int anzahl) {
@@ -42,9 +52,12 @@ public class aufgabe_a_2022_07_06 {
         else {
             rabatt=0;
         }
-        
         return rabatt; 
     }
     
-    
+    //Methode Abzug Rabatt vom Rechnungsbetrag
+    public static double Abzug (double betrag, int rabatt) {
+        double result = (betrag-((betrag/100)*rabatt));        
+        return result;
+    }
 }
